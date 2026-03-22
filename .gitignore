@@ -23,8 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large binary files
-*.mp4
-*.pptx
-screenshot-*.png
-happyrobot-*.png
+# Large binary files (root-level only)
+/hf_*.mp4
+/*.pptx
+/screenshot-*.png
+/happyrobot-*.png
