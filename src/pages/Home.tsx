@@ -3,6 +3,7 @@ import Hero from '../components/sections/Hero';
 import WhatIsTradeFinance from '../components/sections/WhatIsTradeFinance';
 import CategorySection from '../components/sections/CategorySection';
 import SummaryTables from '../components/sections/SummaryTables';
+import Footer from '../components/sections/Footer';
 import { importProducts } from '../data/importProducts';
 import { exportProducts } from '../data/exportProducts';
 import { guaranteeProducts } from '../data/guaranteeProducts';
@@ -56,19 +57,22 @@ const Divider = () => (
 
 const Home = () => (
   <>
-    <Navbar />
-    <main>
-      <Hero />
-      <WhatIsTradeFinance />
-      {categories.map((category) => (
-        <div key={category.id}>
-          <Divider />
-          <CategorySection category={category} />
-        </div>
-      ))}
-      <Divider />
-      <SummaryTables />
-    </main>
+    <div className="relative z-10 bg-bg-primary">
+      <Navbar />
+      <main>
+        <Hero />
+        <WhatIsTradeFinance />
+        {categories.map((category) => (
+          <div key={category.id}>
+            <Divider />
+            <CategorySection category={category} />
+          </div>
+        ))}
+        <Divider />
+        <SummaryTables />
+      </main>
+    </div>
+    <Footer />
   </>
 );
 
