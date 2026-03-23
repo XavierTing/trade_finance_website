@@ -26,7 +26,7 @@ export const guaranteeProducts: Product[] = [
     id: 'standby-lc',
     name: 'Standby Letter of Credit',
     scenario: 'A Singapore supplier needs to assure an overseas buyer that if they fail to deliver, the buyer will be compensated up to $1M.',
-    explanation: 'A Standby Letter of Credit works like a Bank Guarantee but follows international letter of credit rules (UCP/ISP). It sits in the background — "on standby" — and only activates if you fail to meet your obligations. It\'s widely used in cross-border transactions where the beneficiary prefers a letter of credit format over a guarantee.',
+    explanation: 'A Standby Letter of Credit works like a Bank Guarantee but is structured as a letter of credit, typically governed by ISP98 (International Standby Practices) or, less commonly, UCP 600. It sits in the background — "on standby" — and the beneficiary can draw on it by presenting a compliant demand if you fail to meet your obligations. Standby LCs are particularly common in US and cross-border transactions where the beneficiary prefers a letter of credit format over a traditional guarantee.',
     diagram: StandbyLCFlow,
   },
   {
@@ -40,7 +40,7 @@ export const guaranteeProducts: Product[] = [
     id: 'performance-guarantee',
     name: 'Performance Guarantee',
     scenario: 'A construction firm wins a $10M contract — the owner requires a 10% performance bond before work begins.',
-    explanation: 'Guarantees the applicant will fulfill their contract obligations. If they fail, the beneficiary (e.g. project owner) claims from The Bank without needing to prove the exact loss — just that the contractor didn\'t perform.',
+    explanation: 'A specific type of Bank Guarantee designed for contract performance. If the applicant fails to deliver, the beneficiary (e.g. project owner) submits a written demand to The Bank asserting non-performance. For on-demand guarantees (the international standard under URDG 758), the bank pays without requiring proof of the exact loss amount. Some performance guarantees are conditional and require evidence of breach — the type depends on the contract terms.',
     diagram: PerformanceGuaranteeFlow,
   },
   {

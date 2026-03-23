@@ -21,7 +21,7 @@ export const guaranteeBillsFinancingSummary: SummaryRow[] = [
   { product: 'Standby Letter of Credit Amendment', category: 'Guarantee', protection: 'High', keyBenefit: 'Modify Standby LC terms after issuance' },
   { product: 'Performance Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Guarantees project / contract delivery' },
   { product: 'Tender Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Shows serious bid commitment' },
-  { product: 'Cash Backed Bank Guarantee', category: 'Guarantee', protection: 'Low risk', keyBenefit: 'Fully cash-secured guarantee' },
+  { product: 'Cash Backed Bank Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Fully cash-secured guarantee — low credit risk for the bank' },
   { product: 'Bank Acceptance Draft', category: 'Bills', protection: 'High', keyBenefit: 'Bank-backed promise to pay at future date' },
   { product: 'Commercial Accept. Draft', category: 'Bills', protection: 'Medium', keyBenefit: 'Buyer\'s own promise to pay at future date' },
   { product: 'Endorsement', category: 'Bills', protection: 'Medium', keyBenefit: 'Transfer draft to another party' },

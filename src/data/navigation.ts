@@ -13,6 +13,7 @@ export const navItems: NavItem[] = [
       { label: 'Import Bill under Letter of Credit', href: '#import' },
       { label: 'Trust Receipt', href: '#import' },
       { label: 'Import Documentary Collection', href: '#import' },
+      { label: 'Withdrawal Form Notification', href: '#import' },
     ],
   },
   {
@@ -20,7 +21,6 @@ export const navItems: NavItem[] = [
     label: 'Export',
     href: '#export',
     children: [
-      { label: 'Withdrawal Form Notification', href: '#export' },
       { label: 'Export Documentary Collection', href: '#export' },
       { label: 'Negotiate / Discount Documents', href: '#export' },
       { label: 'Transferred Letter of Credit', href: '#export' },
