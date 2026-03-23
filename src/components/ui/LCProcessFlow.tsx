@@ -13,22 +13,22 @@ const LCProcessFlow = () => (
       {/* Buyer (Applicant) */}
       <rect x="30" y="100" width="160" height="60" rx="6" fill="#B8B0C8" stroke="#9A90AE" strokeWidth="0.5" />
       <text x="110" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="14" fill="#2C2A25">Buyer (applicant)</text>
-      <text x="110" y="144" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="11" fill="#3D3A4E">Applies for LC</text>
+      <text x="110" y="144" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#3D3A4E">Applies for LC</text>
 
       {/* Seller (Beneficiary) */}
       <rect x="430" y="100" width="160" height="60" rx="6" fill="#C8927A" stroke="#B07A62" strokeWidth="0.5" />
       <text x="510" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="14" fill="#2C2A25">Seller (beneficiary)</text>
-      <text x="510" y="144" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="11" fill="#4A2E20">Ships goods</text>
+      <text x="510" y="144" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#4A2E20">Ships goods</text>
 
       {/* Issuing Bank */}
       <rect x="30" y="290" width="160" height="60" rx="6" fill="#D6D3C9" stroke="#B5B1A4" strokeWidth="0.5" />
       <text x="110" y="314" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="14" fill="#2C2A25">Issuing bank</text>
-      <text x="110" y="334" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="11" fill="#5C5A53">{"Verifies, issues & pays LC"}</text>
+      <text x="110" y="334" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#5C5A53">{"Verifies, issues & pays LC"}</text>
 
       {/* Advising Bank */}
       <rect x="430" y="290" width="160" height="60" rx="6" fill="#D6D3C9" stroke="#B5B1A4" strokeWidth="0.5" />
       <text x="510" y="314" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="14" fill="#2C2A25">Advising bank</text>
-      <text x="510" y="334" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="11" fill="#5C5A53">Advises LC to seller</text>
+      <text x="510" y="334" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#5C5A53">Advises LC to seller</text>
 
       {/* Step 1: Buyer → Issuing Bank */}
       <line x1="80" y1="160" x2="80" y2="290" stroke="#7A7872" strokeWidth="1.2" markerEnd="url(#lc-arrow)" />
@@ -55,17 +55,17 @@ const LCProcessFlow = () => (
 
       {/* Legend */}
       <line x1="100" y1="432" x2="135" y2="432" stroke="#7A7872" strokeWidth="1.2" markerEnd="url(#lc-arrow)" />
-      <text x="142" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#7A7872">LC issuance flow</text>
+      <text x="142" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#7A7872">LC issuance flow</text>
 
       <line x1="270" y1="432" x2="305" y2="432" stroke="#6B7D5E" strokeWidth="1.5" markerEnd="url(#lc-arrow)" />
-      <text x="312" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#6B7D5E">{"Goods & payment"}</text>
+      <text x="312" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#6B7D5E">{"Goods & payment"}</text>
 
       <path d="M430 432 L465 432" fill="none" stroke="#6B7D5E" strokeWidth="1.2" strokeDasharray="5 3" markerEnd="url(#lc-arrow)" />
-      <text x="472" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#6B7D5E">Settlement</text>
+      <text x="472" y="436" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#6B7D5E">Settlement</text>
 
       {/* Callout box */}
       <rect x="18" y="452" width="584" height="22" rx="4" fill="#DEDAD0" stroke="none" />
-      <text x="310" y="467" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#5C5A53">{"The LC guarantees payment to the seller, provided all documentary conditions are met \u2014 reducing risk for both parties."}</text>
+      <text x="310" y="467" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#5C5A53">{"The LC guarantees payment to the seller, provided all documentary conditions are met \u2014 reducing risk for both parties."}</text>
     </svg>
   </div>
 );

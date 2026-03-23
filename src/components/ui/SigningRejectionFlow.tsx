@@ -7,18 +7,18 @@ const SigningRejectionFlow = () => (
         </marker>
       </defs>
 
-      <text x="310" y="24" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="18" fill="#2C2A25">{"Signing / rejection & cancellation"}</text>
+      <text x="310" y="24" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="17" fill="#2C2A25">{"Signing / rejection & cancellation"}</text>
 
       {/* Row 1: 2 boxes centered */}
       <rect x="130" y="55" width="160" height="50" rx="6" fill="#D6D3C9" stroke="#B5B1A4" strokeWidth="0.5" />
-      <text x="210" y="75" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="11" fill="#2C2A25">Draft presented</text>
-      <text x="210" y="91" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#5C5A53">to buyer</text>
+      <text x="210" y="75" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="10" fill="#2C2A25">Draft presented</text>
+      <text x="210" y="91" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#5C5A53">to buyer</text>
 
       <line x1="290" y1="80" x2="320" y2="80" stroke="#7A7872" strokeWidth="1" markerEnd="url(#src-arrow)" />
 
       <rect x="322" y="55" width="160" height="50" rx="6" fill="#B8B0C8" stroke="#9A90AE" strokeWidth="0.5" />
-      <text x="402" y="75" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="11" fill="#2C2A25">Buyer inspects</text>
-      <text x="402" y="91" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#3D3A4E">{"terms & documents"}</text>
+      <text x="402" y="75" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="10" fill="#2C2A25">Buyer inspects</text>
+      <text x="402" y="91" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#3D3A4E">{"terms & documents"}</text>
 
       {/* Single trunk line from center bottom of buyer box */}
       <line x1="402" y1="105" x2="402" y2="130" stroke="#7A7872" strokeWidth="1" />
@@ -33,28 +33,28 @@ const SigningRejectionFlow = () => (
 
       {/* Row 2: 3 outcome boxes */}
       <rect x="35" y="154" width="160" height="50" rx="6" fill="#8B9A7A" stroke="#6B7D5E" strokeWidth="0.5" />
-      <text x="115" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="11" fill="#EBEBE9">Signing (acceptance)</text>
-      <text x="115" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#D6D3C9">binding obligation to pay</text>
+      <text x="115" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="10" fill="#EBEBE9">Signing (acceptance)</text>
+      <text x="115" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#D6D3C9">binding obligation to pay</text>
 
       <rect x="227" y="154" width="160" height="50" rx="6" fill="#C48A7A" stroke="#A8705E" strokeWidth="0.5" />
-      <text x="307" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="11" fill="#2C2A25">Rejection</text>
-      <text x="307" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#4A2E20">draft returned unpaid</text>
+      <text x="307" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="10" fill="#2C2A25">Rejection</text>
+      <text x="307" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#4A2E20">draft returned unpaid</text>
 
       <rect x="419" y="154" width="160" height="50" rx="6" fill="#D6D3C9" stroke="#B5B1A4" strokeWidth="0.5" />
-      <text x="499" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="11" fill="#2C2A25">Cancellation</text>
-      <text x="499" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="10" fill="#5C5A53">draft formally voided</text>
+      <text x="499" y="174" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="700" fontSize="10" fill="#2C2A25">Cancellation</text>
+      <text x="499" y="190" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="400" fontSize="9" fill="#5C5A53">draft formally voided</text>
 
       {/* Step numbers */}
       <circle cx="210" cy="120" r="9" fill="#B5B1A4" />
-      <text x="210" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="9" fill="#EBEBE9">1</text>
+      <text x="210" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="8" fill="#EBEBE9">1</text>
       <circle cx="402" cy="120" r="9" fill="#B5B1A4" />
-      <text x="402" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="9" fill="#EBEBE9">2</text>
+      <text x="402" y="124" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="8" fill="#EBEBE9">2</text>
       <circle cx="115" cy="219" r="9" fill="#B5B1A4" />
-      <text x="115" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="9" fill="#EBEBE9">3a</text>
+      <text x="115" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="8" fill="#EBEBE9">3a</text>
       <circle cx="307" cy="219" r="9" fill="#B5B1A4" />
-      <text x="307" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="9" fill="#EBEBE9">3b</text>
+      <text x="307" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="8" fill="#EBEBE9">3b</text>
       <circle cx="499" cy="219" r="9" fill="#B5B1A4" />
-      <text x="499" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="9" fill="#EBEBE9">3c</text>
+      <text x="499" y="223" textAnchor="middle" fontFamily="'Inter',system-ui,sans-serif" fontWeight="500" fontSize="8" fill="#EBEBE9">3c</text>
     </svg>
   </div>
 );
