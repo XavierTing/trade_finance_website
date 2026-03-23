@@ -15,8 +15,10 @@ export const importExportSummary: SummaryRow[] = [
 ];
 
 export const guaranteeBillsFinancingSummary: SummaryRow[] = [
-  { product: 'Bank Guarantee / Standby Letter of Credit', category: 'Guarantee', protection: 'High', keyBenefit: 'Bank pays if applicant defaults' },
-  { product: 'Bank Guarantee / Standby Letter of Credit Amendment', category: 'Guarantee', protection: 'High', keyBenefit: 'Modify guarantee terms after issuance' },
+  { product: 'Bank Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Bank pays if applicant defaults on contract' },
+  { product: 'Bank Guarantee Amendment', category: 'Guarantee', protection: 'High', keyBenefit: 'Modify guarantee terms after issuance' },
+  { product: 'Standby Letter of Credit', category: 'Guarantee', protection: 'High', keyBenefit: 'Cross-border guarantee under LC rules' },
+  { product: 'Standby Letter of Credit Amendment', category: 'Guarantee', protection: 'High', keyBenefit: 'Modify Standby LC terms after issuance' },
   { product: 'Performance Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Guarantees project / contract delivery' },
   { product: 'Tender Guarantee', category: 'Guarantee', protection: 'High', keyBenefit: 'Shows serious bid commitment' },
   { product: 'Cash Backed Bank Guarantee', category: 'Guarantee', protection: 'Low risk', keyBenefit: 'Fully cash-secured guarantee' },

@@ -36,7 +36,7 @@ const categories: Category[] = [
     id: 'bills',
     title: 'e-Bills',
     titleSecondary: 'E-Commercial Draft',
-    subtitle: 'China\'s electronic tradeable payment instruments for domestic and cross-border trade.',
+    subtitle: 'China\'s electronic tradeable payment instruments for domestic and cross-border trade, covering issuance, endorsement, discounting, pledging, and lifecycle management of acceptance drafts.',
     products: billsProducts,
   },
   {

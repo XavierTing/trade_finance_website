@@ -1,32 +1,40 @@
+import BankGuaranteeAmendmentFlow from '../components/ui/BankGuaranteeAmendmentFlow';
+import BankGuaranteeFlow from '../components/ui/BankGuaranteeFlow';
 import CashBackedBGFlow from '../components/ui/CashBackedBGFlow';
 import PerformanceGuaranteeFlow from '../components/ui/PerformanceGuaranteeFlow';
+import StandbyLCAmendmentFlow from '../components/ui/StandbyLCAmendmentFlow';
+import StandbyLCFlow from '../components/ui/StandbyLCFlow';
 import TenderGuaranteeFlow from '../components/ui/TenderGuaranteeFlow';
 import type { Product } from '../types/Product';
 
 export const guaranteeProducts: Product[] = [
   {
-    id: 'bank-guarantee-sblc',
-    name: 'Bank Guarantee / Standby Letter of Credit',
-    scenario: 'A construction company needs to assure the project owner they\'ll complete the work — or the owner gets compensated.',
-    explanation: 'A Bank Guarantee or Standby Letter of Credit is like an insurance policy from your bank. If you fail to fulfill a contract, the other party can claim money from The Bank. It\'s "standby" because it only activates if something goes wrong.',
-    flow: [
-      { label: 'Applicant requests guarantee' },
-      { label: 'The Bank issues Bank Guarantee/Standby Letter of Credit' },
-      { label: 'Beneficiary receives guarantee' },
-      { label: 'Contract performed normally' },
-      { label: 'If default: beneficiary claims' },
-    ],
+    id: 'bank-guarantee',
+    name: 'Bank Guarantee',
+    scenario: 'A construction company wins a $5M government contract — the project owner requires a guarantee that the work will be completed as promised.',
+    explanation: 'A Bank Guarantee is a promise from The Bank to a third party: if your company fails to deliver on a contract, The Bank will compensate them. Think of it as your bank vouching for you. It\'s commonly used in construction, supply agreements, and government contracts where the other party needs assurance before working with you.',
+    diagram: BankGuaranteeFlow,
   },
   {
-    id: 'bg-sblc-amendment',
-    name: 'Bank Guarantee / Standby Letter of Credit Amendment',
-    scenario: 'A warehouse project is extended by 6 months — the contractor needs to extend the Bank Guarantee expiry date.',
-    explanation: 'If the terms of a Bank Guarantee or Standby Letter of Credit need to change — extend the validity period, increase the guarantee amount, or update beneficiary details — the applicant requests an amendment through The Bank.',
-    bullets: [
-      'Applicant requests → The Bank reviews → Beneficiary consents → Amendment issued',
-      'The original guarantee remains in force until amendment is accepted',
-      'Amendment fees apply and vary based on the type of change',
-    ],
+    id: 'bank-guarantee-amendment',
+    name: 'Bank Guarantee Amendment',
+    scenario: 'A warehouse project is extended by 6 months — the contractor needs to extend the Bank Guarantee expiry date before it lapses.',
+    explanation: 'Sometimes the terms of an existing Bank Guarantee need to change — the project timeline shifts, the contract value increases, or the beneficiary details are updated. An amendment is a formal request through The Bank to modify the original guarantee. The beneficiary must consent before the change takes effect.',
+    diagram: BankGuaranteeAmendmentFlow,
+  },
+  {
+    id: 'standby-lc',
+    name: 'Standby Letter of Credit',
+    scenario: 'A Singapore supplier needs to assure an overseas buyer that if they fail to deliver, the buyer will be compensated up to $1M.',
+    explanation: 'A Standby Letter of Credit works like a Bank Guarantee but follows international letter of credit rules (UCP/ISP). It sits in the background — "on standby" — and only activates if you fail to meet your obligations. It\'s widely used in cross-border transactions where the beneficiary prefers a letter of credit format over a guarantee.',
+    diagram: StandbyLCFlow,
+  },
+  {
+    id: 'standby-lc-amendment',
+    name: 'Standby Letter of Credit Amendment',
+    scenario: 'A long-term supply contract is renewed for another year — the Standby Letter of Credit validity needs to be extended to match.',
+    explanation: 'When the terms of an existing Standby Letter of Credit need updating — extending the expiry date, adjusting the amount, or changing beneficiary details — the applicant requests an amendment through The Bank. Like a Bank Guarantee Amendment, all parties must agree before the changes take effect.',
+    diagram: StandbyLCAmendmentFlow,
   },
   {
     id: 'performance-guarantee',

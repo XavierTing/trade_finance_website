@@ -32,8 +32,10 @@ export const navItems: NavItem[] = [
     label: 'Guarantee',
     href: '#guarantee',
     children: [
-      { label: 'Bank Guarantee / Standby Letter of Credit', href: '#guarantee' },
-      { label: 'Bank Guarantee / Standby Letter of Credit Amendment', href: '#guarantee' },
+      { label: 'Bank Guarantee', href: '#guarantee' },
+      { label: 'Bank Guarantee Amendment', href: '#guarantee' },
+      { label: 'Standby Letter of Credit', href: '#guarantee' },
+      { label: 'Standby Letter of Credit Amendment', href: '#guarantee' },
       { label: 'Performance Guarantee', href: '#guarantee' },
       { label: 'Tender Guarantee', href: '#guarantee' },
       { label: 'Cash Backed Bank Guarantee', href: '#guarantee' },
