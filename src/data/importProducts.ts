@@ -1,3 +1,4 @@
+import LCProcessFlow from '../components/ui/LCProcessFlow';
 import type { Product } from '../types/Product';
 
 export const importProducts: Product[] = [
@@ -6,14 +7,7 @@ export const importProducts: Product[] = [
     name: 'Letter of Credit',
     scenario: 'An importer buying $500K of timber from Indonesia needs the seller to trust they\'ll get paid.',
     explanation: 'A Letter of Credit is like a promise from your bank to the seller\'s bank. When you (the buyer) want to purchase goods from overseas, your bank issues a document saying: "We guarantee payment, as long as the seller ships the goods and provides the correct documents." This protects both sides.',
-    flow: [
-      { label: 'Buyer applies for Letter of Credit' },
-      { label: 'The Bank issues the Letter of Credit' },
-      { label: 'Seller\'s bank advises seller' },
-      { label: 'Seller ships goods' },
-      { label: 'Buyer receives goods' },
-      { label: 'Docs & payment settled' },
-    ],
+    diagram: LCProcessFlow,
   },
   {
     id: 'lc-amendment',

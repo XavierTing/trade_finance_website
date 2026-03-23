@@ -10,6 +10,8 @@ export interface Product {
   explanation: string;
   bullets?: string[];
   flow?: FlowStepData[];
+  image?: string;
+  diagram?: React.ComponentType;
 }
 
 export type CategoryId = 'import' | 'export' | 'guarantee' | 'bills' | 'financing';
