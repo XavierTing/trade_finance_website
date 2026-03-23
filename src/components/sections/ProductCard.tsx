@@ -19,7 +19,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </h3>
 
         <div className="mb-5 rounded-lg bg-bg-secondary px-4 py-3">
-          <p className="text-sm font-medium text-text-primary">Why?</p>
+          <p className="text-sm font-medium text-text-primary">Example</p>
           <p className="mt-1 text-sm leading-relaxed text-text-secondary">{product.scenario}</p>
         </div>
 

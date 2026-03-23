@@ -1,3 +1,6 @@
+import CashBackedBGFlow from '../components/ui/CashBackedBGFlow';
+import PerformanceGuaranteeFlow from '../components/ui/PerformanceGuaranteeFlow';
+import TenderGuaranteeFlow from '../components/ui/TenderGuaranteeFlow';
 import type { Product } from '../types/Product';
 
 export const guaranteeProducts: Product[] = [
@@ -30,35 +33,20 @@ export const guaranteeProducts: Product[] = [
     name: 'Performance Guarantee',
     scenario: 'A construction firm wins a $10M contract — the owner requires a 10% performance bond before work begins.',
     explanation: 'Guarantees the applicant will fulfill their contract obligations. If they fail, the beneficiary (e.g. project owner) claims from The Bank without needing to prove the exact loss — just that the contractor didn\'t perform.',
-    bullets: [
-      'Common in construction, engineering, and government contracts',
-      'Typically 5-10% of total contract value',
-      'Expires automatically once the obligation period ends or a completion certificate is issued',
-      'Applicant requests → The Bank assesses credit → Guarantee issued to beneficiary',
-    ],
+    diagram: PerformanceGuaranteeFlow,
   },
   {
     id: 'tender-guarantee',
     name: 'Tender Guarantee',
     scenario: 'A company bidding on a $50M government project needs a 2% bid bond to prove they won\'t walk away if they win.',
     explanation: 'Required when bidding on projects or government tenders. It proves the bidder is serious and financially capable. If the bidder wins but refuses to sign the contract, the tender organizer claims the guarantee.',
-    bullets: [
-      'Typically 1-5% of the bid value',
-      'Valid for the tender evaluation period (usually 3-6 months)',
-      'Released automatically if the bidder loses, or converted to a performance guarantee if they win',
-      'Bidder requests → The Bank issues guarantee → Submitted with tender documents',
-    ],
+    diagram: TenderGuaranteeFlow,
   },
   {
     id: 'cash-backed-bg',
     name: 'Cash Backed Bank Guarantee',
     scenario: 'A small business with limited credit history needs a guarantee fast — they deposit cash to secure it.',
     explanation: 'A simpler version where the applicant deposits the full guarantee amount in cash with The Bank. Faster to issue, lower fees, minimal credit assessment. Think of it as a security deposit issued as a formal guarantee document.',
-    flow: [
-      { label: 'Applicant deposits full cash amount' },
-      { label: 'The Bank holds cash as collateral' },
-      { label: 'The Bank issues cash-backed Bank Guarantee' },
-      { label: 'If claim: paid from deposited cash' },
-    ],
+    diagram: CashBackedBGFlow,
   },
 ];
